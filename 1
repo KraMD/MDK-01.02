@@ -3,18 +3,15 @@ using namespace std;
 #include <math.h>
 main ()
 {
-	float r,a,b,c,e,S,V,T,p;
-	cout<<"vvedite r";
-	cin>>r;
-	p=3.14;
-	a=20;
-	e=2;
-	b=pow(r, e);
-	c=pow(a, e);
-	V=p*b;
-	T=p*c;
-	S=V-T;
+	float a,b,d,e,S,p;
+	cout<<"\n vvedite 1 storony";
+	cin>>a;
+	d=a+a+a;
+	p=d/2;
+	e=p-a;
+	b=p*e*e*e;
+	S=sqrt(b);
 	cout<<"S="<<S;
 	system("pause");
-	return 0;
+	return 0;	
 	}
