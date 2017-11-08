@@ -1,0 +1,26 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main ()
+{
+	int a,b,c,d,e,f,g,h,j,k,l,x,y,z;
+	cout<<"\n vvedite chasi 1";
+	cout<<"\n";
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	cout<<"\n vvedite chasi 2";
+	cout<<"\n";
+	cin>>d;
+	cin>>e;
+	cin>>f;
+	g=a*3600+b*60+c;
+	h=d*3600+e*60+f;
+	j=h-g;
+	x=abs(j);
+	k=x/3600;//hour
+	l=x-k*3600;
+	y=l/60;//min
+	z=l-y*60;//sec	
+	cout<<k<<" chasov "<<y<<" minute "<<z<<" secund";
+}
