@@ -1,0 +1,21 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main ()
+{
+	int a,c,f,x;
+	float b,e,g,d;
+	d=2.54;//1 duim;
+	cout<<"\nvvedite chislo a=";
+	cin>>a;
+	b=a*d;//float
+	c=b/100;//int metr
+	e=b-c*100;//float
+	f=e;//int cm
+	g=e-f;
+	x=g*100;//int mm
+	cout<<d<<" dyim = "<<c<<" metr "<<f<<" cm "<<x<<" mm";
+	cout<<"\n ";
+	system ("pause");
+	return 0;
+}
