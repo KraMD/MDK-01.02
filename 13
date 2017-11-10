@@ -1,0 +1,15 @@
+using namespace std;
+# include <iostream>
+main()
+{
+int x;
+cout<<"\n vvedite ocenky=";
+cin>>x;
+switch(x)
+{case 2:cout<<"\t very bad\n"; break;
+case 3:cout<<"\t bad\n"; break;
+case 4:cout<<"\t good\n"; break;
+case 5:cout<<"\t very good\n"; break;
+default: cout<<"\t no ocenki\n";
+ }
+}
