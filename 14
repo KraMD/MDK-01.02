@@ -1,0 +1,18 @@
+using namespace std;
+# include <iostream> 
+# include <math.h> 
+main ()
+{
+float x, y;
+cout<<"\n vvedite 2 chisla";
+cout<<"\n";
+cin>> x;
+cin>> y;
+if (x==y) cout<<"\n chisla odinakovi";
+else
+if (x>y) 
+cout <<"\n max(x)="<<x;
+ else
+cout<<"\n max(y)="<<y;
+return 0;
+}
