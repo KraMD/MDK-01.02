@@ -1,0 +1,26 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main ()
+{
+	int a;
+	cout<<"\nvvedite chislo";
+	cout<<"\n";
+	cin>>a;
+		switch (a)
+		{
+			case 1:cout<<"February";break;
+			case 2:cout<<"March";break;
+			case 3:cout<<"April";break;
+			case 4:cout<<"May";break;
+			case 5:cout<<"June";break;
+			case 6:cout<<"JUly";break;
+			case 7:cout<<"August";break;
+			case 8:cout<<"September";break;
+			case 9:cout<<"October";break;
+			case 10:cout<<"November";break;
+			case 11:cout<<"December";break;
+			case 12:cout<<"January";break;
+			default:cout<<"vvedino ne pravilnoe chislo";
+		}
+}
