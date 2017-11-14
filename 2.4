@@ -1,0 +1,24 @@
+using namespace std;
+	#include <iostream>
+	#include <math.h>
+	main ()
+	{
+		int x,y,z,a,b,c,d;
+		cout<<"\nvvedite x,y,z";
+		cout<<"\n";
+		cin>>x>>y>>z;
+		if ((x<y)&&(x<z)) goto a;
+		if (y<z) goto b;
+		if ((z<x)&&(z<y)) goto c;
+		else cout<<"\nvse chisla rovni";
+		goto d;
+		a: cout<<"\nmin x";
+		goto d;
+		b: cout<<"\min y";
+		goto d;
+		c: cout<<"\nmin z";
+		d:	cout<<"\n";
+		system("pause");
+		return 0;
+		
+	}
