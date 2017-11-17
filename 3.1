@@ -1,0 +1,29 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main()
+{
+	float x,y,z;
+	int a,b,c,f;
+	cout<<"\nvvedite 2 chisla";
+	cout<<"\n";
+	cin>>x>>y;
+	if (x<0 && y<0) goto a;
+	if (x<0 || y<0) goto b;
+	if (x>0 && y>0 && x<=0.5 || x>=2 && y<=0.5 || y>=2) goto c;
+	else goto f;
+	a: x=x*-1;
+	y=y*-1;
+	goto f;
+	b: x=x+0.5;
+	y=y+0.5;
+	goto f;
+	c: x=x/10;
+	y=y/10;
+	goto f;
+	f:	cout<<"x="<<x<<" y="<<y;
+	cout<<"\n";
+	system("pause");
+	return 0;
+	
+}
