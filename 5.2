@@ -1,0 +1,22 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main()
+{
+	int i,n,p,m,S;
+	int k=0;
+	S=0;
+	cout<<"vvedite n";
+	cin>>n;
+	for (i=1; i<=20; i++)
+	{
+		m=n;
+		n=n/10;
+		if (n==0) goto p;
+		k=k+1;
+		S=S+(m-n*10);
+	}
+	p: cout<<k<<";"<<S<<";"<<m;
+	system("pause");
+	return 0;
+}
