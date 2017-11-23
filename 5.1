@@ -1,0 +1,22 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main()
+{
+	float i,n,S,a,p;
+	S=0;
+	a=10;
+	cout<<"\nvvedite n";
+	cin>>n;
+	for (i=1; i<=n; i=i+1)
+	{
+		a=a+((a*10)/100);
+		S=S+a;
+	
+	}
+	cout<<S;
+	cout<<"\n";
+	system("pause");
+	return 0;
+	}
+
