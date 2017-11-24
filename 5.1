@@ -3,20 +3,22 @@ using namespace std;
 #include <math.h>
 main()
 {
-	float i,n,S,a,p;
+	int i,n,p,m,S;
+	int k=0;
 	S=0;
-	a=10;
-	cout<<"\nvvedite n";
+	cout<<"vvedite n=";
 	cin>>n;
-	for (i=1; i<=n; i=i+1)
+	for (i=1; i<=20; i++)
 	{
-		a=a+((a*10)/100);
-		S=S+a;
+		m=n;
+		n=n/10;
+		S=S+(m-n*10);
+		k=k+1;
+		if (n==0) goto p;
 	
 	}
-	cout<<S;
+	p: cout<<"kolichestvo civr k="<<k<<";"<<"symma civr S="<<S<<";"<<" 1 chislo m="<<m;
 	cout<<"\n";
 	system("pause");
 	return 0;
-	}
-
+}
