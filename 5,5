@@ -1,0 +1,16 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+
+main()
+{  
+int i,j;
+int S = 64;
+for(i=0;i<S;i++)           // kroliki
+for(j=0;j<S;j++)          // gysi
+{ 
+	if(i*4 + j*2 == 64) cout<<"krolikov "<<i<<"  gysei "<<j<<"\n";
+}
+     system ("pause");
+     return 0;
+ }
