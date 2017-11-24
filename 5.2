@@ -12,11 +12,12 @@ main()
 	{
 		m=n;
 		n=n/10;
-		if (n==0) goto p;
-		k=k+1;
 		S=S+(m-n*10);
+		k=k+1;
+		if (n==0) goto p;
+	
 	}
-	p: cout<<k<<";"<<S<<";"<<m;
+	p: cout<<"kolichestvo civr k="<<k<<";"<<"symma civr S="<<S<<";"<<"1 chislo m="<<m;
 	system("pause");
 	return 0;
 }
