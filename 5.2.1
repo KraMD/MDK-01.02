@@ -1,0 +1,23 @@
+using namespace std;
+#include <iostream>
+#include <math.h>
+main()
+{
+float i,n,S,a;
+a=10;
+cout<<"vvedite kolichestvvo dnei";
+cout<<"\n";
+cin>>n;
+S=0;
+i=1;
+while(i<=n)
+{
+i++;
+a=a+((a*10)/100);
+S=S+a;
+}
+cout<<"proidenoe rastoanie S="<<S<<" za n="<<n<<" dnei";
+cout<<"\n";
+system ("pause");
+return 0;
+}
