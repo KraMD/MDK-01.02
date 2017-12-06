@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+int n,i,S,P,O;
+int arr[n];
+S=P=O=0;
+srand(time(NULL)); 	
+cout<<"vvedite n";
+cin>>n;
+for(i=0;i<n;i++)
+{
+arr[n]=rand() % 5-1;
+cout << "arr[" << arr[n] << "]" << endl;
+if (arr[n]==0) S=S+1;
+if (arr[n]>0) P=P+1;
+if (arr[n]<0) O=O+1;
+}
+cout<<O<<" otricatelnie"<<S<<" nylevie "<<P<<" poloshitelnie";
+cout<<"\n";
+system ("pause");
+return 0;
+} 
