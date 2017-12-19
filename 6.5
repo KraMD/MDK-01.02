@@ -9,20 +9,25 @@ int main()
 {
 int n,i,S,P,O;
 int arr[n];
-S=P=O=0;
+S=0;
+P=0;
+O=0;
 srand(time(NULL)); 	
-cout<<"vvedite n";
-cin>>n;
+std::cout<<"vvedite n";
+std::cin>>n;
 for(i=0;i<n;i++)
 {
-arr[n]=rand() % 5-1;
-cout << "arr[" << arr[n] << "]" << endl;
-if (arr[n]==0) S=S+1;
-if (arr[n]>0) P=P+1;
-if (arr[n]<0) O=O+1;
+arr[i]=rand() % 5-1;
+std::cout << "arr[" << arr[i] << "]" << endl;
 }
-cout<<O<<" otricatelnie"<<S<<" nylevie "<<P<<" poloshitelnie";
-cout<<"\n";
+for(i=0;i<n;i++)
+{
+if (arr[i]==0) S=S+1;
+if (arr[i]>0) P=P+1;
+if (arr[i]<0) O=O+1;
+}
+std::cout<<O<<" otricatelnie "<<S<<" nylevie "<<P<<" poloshitelnie";
+std::cout<<"\n";
 system ("pause");
 return 0;
 } 
